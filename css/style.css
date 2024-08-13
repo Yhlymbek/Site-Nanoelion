@@ -1,0 +1,296 @@
+html {
+    box-sizing: border-box;
+}
+*,*::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    font-family: "Jura", sans-serif;
+    font-weight: 300;
+    background-color:black;
+}
+.jura-font {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-mono-font {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.container{
+    max-width: 1366px;
+    background-color: transparent;
+    margin: 0 auto;
+}
+:root {
+    --accent-color: rgb(11, 8, 8);
+    --gray-color: #4E4E4E;
+    --background-color: black;
+}
+
+.header {
+    min-height: 953px;
+    background: url(/img/magnetrons_bg.jpg)  bottom center;
+    background-repeat: no-repeat;
+    margin-top: 47px;
+    
+}
+.header__title {
+}
+.magnetrons_bg {
+}
+.h2 {
+}
+
+.text-h1 {
+    font-family: "Jura", sans-serif;
+    font-weight: 250;
+    font-size: 67px;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    color: white;
+    text-align: center;
+    margin-top: 22px;
+    margin-bottom: 0px;
+}
+.text-h2 {
+    font-family: "Jura", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 0.21em;
+    color: white;
+    text-align: center;
+    margin-bottom: 137px;
+    max-width: 583;
+    max-height: 31;
+    text-stroke: 1.5px black;
+}
+.text-h3 {
+    font-family: "Jura", sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    color: white;
+    text-indent: 100px;
+}
+
+.text-photo {
+    font-family: "Jura", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: white;
+}
+.main_menu {
+    display: inline-flex;
+  flex-direction: column;
+  font-family: "Jura", sans-serif;
+  margin-left: 73px;
+  
+}
+.bttn {
+    font-family: "Jura", sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    letter-spacing: 0.11em;
+    color: white;
+  border: 0;
+  background: transparent;
+  text-align:left;
+  margin-bottom: 34px;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.bttn:hover {
+	color: white;
+}
+
+.bttn:hover:before {
+	-webkit-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	transform: scaleX(1);
+	-webkit-transform-origin: left;
+	-ms-transform-origin: left;
+	transform-origin: left;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: -webkit-transform 0.5s;
+	-o-transition: transform 0.5s;
+	transition: transform 0.5s;
+	transition: transform 0.5s, -webkit-transform 0.25s;
+}
+
+.bttn:before {
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: white;
+	position: absolute;
+	left: 0; bottom: -5px;
+	-webkit-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transform-origin: right;
+	-ms-transform-origin: right;
+	transform-origin: right;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: -webkit-transform 0.5s;
+	-o-transition: transform 0.5s;
+	transition: transform 0.5s;
+	transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.bttn:nth-child(3) { 
+    margin-bottom:0px;
+}
+.scrollto{
+    max-width: 146px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18;
+    letter-spacing: 0.21em;
+    color: white;
+    text-align: center;
+    bottom: 30px;   
+}
+.container1{
+    max-width: 1366px;
+    background-color: transparent;
+    margin: 0 auto;
+    display: flex;
+    justify-content: right;
+    margin-top: 300px;
+}
+.h1-standart {
+font-family: "Jura", sans-serif;
+    font-weight: 300;
+    font-size: 84px;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+.Abus {
+    max-width:893px ;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Quick-navigation {
+    position: fixed;
+    z-index: 1;
+    margin: 0;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 35px;
+  }
+  .Quick-navigation-item {
+    color: var(--gray-color);
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: color 0.3s;
+    padding: 0.5em;
+    display: block;
+  }
+  .Quick-navigation-item:hover,
+  .Quick-navigation-item.current {
+    color: #fff;
+  }
+  .Scroll-progress-indicator {
+    will-change: opacity, transform;
+    transition: all 0.5s;
+    left: -10px;
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    padding: 2em;
+    transform: translateX(200%) translateY(-50%);
+    background-color: rgba(0,0,0,0.1);
+  }
+  .Scroll-progress-indicator.visible {
+    transform: translateX(-100%) translateY(-50%);
+    opacity: 1;
+  }
+  #A {
+    max-width: 1366px;
+    background-color: transparent;
+    margin: 0 auto;
+  }
+  #B {
+    max-width: 1366px;
+    background-color: transparent;
+    margin: 0 auto;
+  }
+  #C {
+    max-width: 1366px;
+    background-color: transparent;
+    margin: 0 auto;
+  }
+  #D {
+    max-width: 1366px;
+    background-color: transparent;
+    margin: 0 auto;
+  }
+  #E {
+    background-color: #f26a85;
+  }
+  #F {
+    background-color: #f26a85;
+  }
+  .Scroll-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    border: none;
+    color: rgba(255,255,255,0.5);
+    font-size: 1.5rem;
+    padding: 0.5em;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s;
+    outline: none;
+  }
+  .Scroll-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .for_nav {
+    max-width: 1366px;
+
+  }
+  .photo_vup{
+    position: relative;
+  }
+  .aboutus {
+    min-height: 953px;
+  }
+  .img_wrap{
+    margin: 0 auto;
+    background: url(/img/image\ 2.png)  bottom center;
+    width: 670px;
+    height: 525px;
+    display: flex;
+  align-items: flex-end;
+  }
+  .img_wrap h1 {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.21em;
+  font-weight: 300;
+  }
+
