@@ -89,7 +89,7 @@ body {
     display: inline-flex;
   flex-direction: column;
   font-family: "Jura", sans-serif;
-  margin-left: 73px;
+  
   
 }
 .bttn {
@@ -174,9 +174,11 @@ font-family: "Jura", sans-serif;
     font-weight: 300;
     font-size: 84px;
     color: white;
-    text-align: center;
+    text-align: left;
     margin-top: 100px;
     margin-bottom: 0px;
+    border-radius: 15px;
+    text-align: center;
 }
 .Abus {
     max-width:893px ;
@@ -293,4 +295,229 @@ font-family: "Jura", sans-serif;
   letter-spacing: 0.21em;
   font-weight: 300;
   }
+/* carousel */
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+.slider_line {
+  display: flex;
+  align-items:center;
+  transition: all 1s;
+}
+.slider_img {
+}
+.slider_btn-prev {
+  background-color: transparent;
+  border: none;
+  transform: translateY(-50%) rotate(180deg);
+  cursor: pointer;
+}
+.slider_btn-next {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.sliderline_wrap{
+  position: relative;
+  max-width: 235px ;
+ overflow: hidden;
 
+}
+.slider_wrapper {
+  display: flex;
+  column-gap:10px;
+  position: absolute;
+  bottom: 5%;
+  left: 33%;
+}
+.slider_dot {
+  width: 16px;
+  height: 16px;
+  border:1px solid white;
+}
+.active-dot {
+  background-color:#fff;
+}
+.slider_dot:hover {
+  background-color:#fff;
+}
+#slider_img1 {
+  background: url(/img/Kmeme.png) bottom center ;
+  align-items: flex-end;
+  max-width: 235px;
+  height: 300px;
+}
+#slider_img2 {
+  background: url(/img/Kmeme1.png) bottom center;
+  max-width: 235px;
+}
+#slider_img3 {
+  background: url(/img/Kmeme.png) bottom center;
+  max-width: 235px;
+}
+.slider_img h1 {
+  color: white;
+  text-align: center;
+  bottom: 0;
+}
+.text-inside h1 {
+  color:white;
+  font-size: 22px;
+  font-weight: 300;
+  border: 0;
+  margin-bottom: 0.1em;
+}
+.image-text {
+  display: inline-block;
+
+}
+.text-inside {
+  display: flex;
+  justify-content: space-between;
+}
+.images_wrap {
+  display: flex;
+  justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.team_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.team_wrapper h3 {
+  font-family: "Jura", sans-serif;
+  font-weight: 300;
+  font-size: 35px;
+  color: white;
+  text-indent: 100px;
+  max-width: 50%;
+}
+.text_work h3 {
+  color: white;
+  max-width: 592px;
+  font-weight: 300;
+  font-size: 35px;
+  margin-top: 0px ;
+
+}
+.wrap_ourwork {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.imgourwork {
+  border: 1px solid white;
+  margin-bottom: 50px;
+}
+.textandlink h3 {
+  font-weight: 300;
+  color: white;
+  font-size: 35px;
+  font-weight: 300;
+}
+.contacts_container {
+display: flex;
+justify-content: space-between;
+align-items: center
+}
+.textandlink h1 {
+  font-weight: 300;
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+}
+.linksul {
+  display: flex;
+  padding: 0;
+}
+
+.linksul li {
+  list-style: none;
+}
+
+.linksul li a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+.linksul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.linksull li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.linksul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+.linksul li a:hover:before {
+  top: 0;
+}
+
+.linksul li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+.linksul li:nth-child(2) a:before{
+  background: #55acee;
+}
+
+.linksul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+.linksul li:nth-child(4) a:before {
+  background: #dd4b39;
+}
+.ulwrapper{
+  margin: 0 auto;
+}
+footer {
+  padding-top:50px
+
+}
+footer h1 {
+  color: white;
+  font-weight: 300;
+  font-size: 22px;
+  
+
+}
+.footercontainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1366px;
+  margin: 0 auto;
+  
+}
