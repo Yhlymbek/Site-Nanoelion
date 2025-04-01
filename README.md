@@ -1,4 +1,3 @@
-# site
-Nanoelion
+# Сайт
+Сайт лаборатории "Наноэлион"
 
-Site of BMSTU 
